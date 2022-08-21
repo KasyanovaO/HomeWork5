@@ -9,7 +9,7 @@ class Program
     {
         for (int i = 0; i < arr.Length; i++)
         {
-            arr[i] = new Random().Next(-100,100);
+            arr[i] = new Random().Next(-100, 100);
         }
     }
 
@@ -34,7 +34,7 @@ class Program
     {
         Console.WriteLine("Введите количество элементов массива ");
         int n = Convert.ToInt32(Console.ReadLine());
-        int[] array = new int [n];
+        int[] array = new int[n];
         FillArray(array);
         Console.WriteLine("Массив");
         PrintArray(array);
