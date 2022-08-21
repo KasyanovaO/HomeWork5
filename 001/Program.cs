@@ -17,7 +17,7 @@ class Program
         Console.Write("[");
         for (int i = 0; i < arr.Length; i++)
         {
-           if (i == arr.Length - 1)
+            if (i == arr.Length - 1)
             {
                 Console.Write(arr[i] + "");
             }
@@ -27,26 +27,25 @@ class Program
             }
         }
         Console.Write("]");
-    
+
     }
     static void Main(string[] args)
     {
-    Console.WriteLine("Ведите количество элементов массива ");
-    int n = Convert.ToInt32(Console.ReadLine());
-    int[] array = new int[n];
-    FillArray(array);
-    Console.WriteLine("Массив");
-    PrintArray(array);
-    Console.WriteLine();
-    Console.WriteLine("Количество четных чисел в массиве ");
-    int count = 0;
-    for (int i = 0; i < array.Length; i++)
-        if (array[i]%2 == 0)
-        {
-            count++;
-        } 
-    Console.WriteLine($"{count}");
+        Console.WriteLine("Введите количество элементов массива ");
+        int n = Convert.ToInt32(Console.ReadLine());
+        int[] array = new int[n];
+        FillArray(array);
+        Console.WriteLine("Массив");
+        PrintArray(array);
+        Console.WriteLine();
+        Console.WriteLine("Количество четных чисел в массиве ");
+        int count = 0;
+        for (int i = 0; i < array.Length; i++)
+            if (array[i] % 2 == 0)
+            {
+                count++;
+            }
+        Console.WriteLine($"{count}");
     }
 }
 
-    
