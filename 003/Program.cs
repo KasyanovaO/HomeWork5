@@ -8,7 +8,7 @@ class Program
     {
         for (int i = 0; i < arr.Length; i++)
         {
-            arr[i] = Convert.ToDouble(new Random().Next(15, 45));
+            arr[i] = Convert.ToDouble(new Random().Next(0, 100));
         }
     }
 
